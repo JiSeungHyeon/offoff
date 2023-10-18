@@ -1,0 +1,196 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'KoPubWorldDotum';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'KoPubWorldDotum';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.ttf') format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'KoPubWorldDotum';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumBold.ttf') format("truetype");
+  font-display: swap;
+}
+body{
+  width:100vw;
+  height:100vh;
+  overflow-x:hidden;
+  font-family: 'KoPubWorldDotum';
+  font-weight: 500;
+  color:#130C20;
+  background:url(../image/bg.png) no-repeat center fixed;
+}
+input::placeholder, textarea::placeholder{
+  font-family: 'KoPubWorldDotum';
+  font-weight: 300;
+}
+input:focus::placeholder, textarea:focus::placeholder{color:transparent;}
+
+/* background_____________ */
+#wrap{
+  width:inherit;
+  height:inherit;
+  position:relative;
+}
+.bg img{
+position:absolute;
+transform:scale(3.0);
+}
+.bg img:nth-child(1){
+  top:30%;
+  left:20%;
+}
+.bg img:nth-child(2){
+  bottom:15%;
+  right:20%;
+}
+.bg img:nth-child(3){
+  bottom:-30%;
+  right:40%;
+}
+
+/* header_______________________ */
+header{
+  width:100vw;
+  height:50px;
+  padding:70px 0;
+}
+.logo{
+  width:100px;
+  height:inherit;
+  margin:auto;
+}
+.logo a img{
+  width:100px;
+  filter:invert(100%);
+}
+
+/* section________________ */
+section{
+  width:1200px;
+  margin:auto;
+}
+.section_in{
+  width:1200px;
+  height:1500px;
+  padding:100px;
+  box-sizing:border-box;
+  text-align:center;
+  background:rgba(255, 255, 255, 0.3);
+  border-radius:50px;
+  box-shadow:0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter:blur(30px);
+  border:1px solid rgba(255, 255, 255, 0.24);
+}
+.section_in h1{
+  font-size:36px;
+  letter-spacing:10px;
+  padding-bottom:10px;
+  border-bottom:1px solid #130C20;
+}
+.section_in h2{
+  font-size:22px;
+  margin:0;
+  margin-top:50px;
+}
+.section_in p{
+  margin:0;
+  margin-bottom:30px;
+  opacity:0.8;
+}
+input[type=tel], input[type=text]{
+  padding:15px; 
+  border:none;
+  outline:none;
+  border-radius:30px;
+  font-size:16px;
+}
+.section_in button,input[type=submit],input[type=reset]{
+  padding:10px;
+  border:none;
+  outline:none;
+  margin-left:10px;
+  background-color:#3A236B;
+  color:#fff;
+  font-weight:300;
+  cursor:pointer;
+  transition:0.35s;
+}
+input[type=reset]{background-color:#773375;}
+.section_in button:hover,input[type=submit]:hover,input[type=reset]:hover{
+  background-color:#612044;
+  border-radius:10px;
+}
+b{
+  font-size:32px;
+  margin:0 10px;
+}
+.section_in em{
+  font-style:normal;
+  margin:0 10px;
+}
+select{
+  font-family: 'KoPubWorldDotum';
+  font-weight: 300;
+  padding:10px; 
+  border:none;
+  outline:none;
+  font-size:16px;
+}
+textarea{
+  width:600px;
+  height:100px;
+  padding:15px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  margin-top:10px;
+  border-radius:20px;
+}
+.btn{margin-top:30px;}
+
+/* footer_____________________________ */
+footer{
+  width:100vw;
+  height:300px;
+  margin-top:100px;
+  padding-top:100px;
+  background-color:rgba(1,1,3,0.3);
+  color:#fff;
+}
+.footer_in{
+  width:1200px;
+  margin:auto;
+  text-align:center;
+}
+address{
+  font-style:normal;
+  font-weight:300;
+  font-size:14px;
+}
+.footer_in em{
+  font-weight:300;
+  font-size:12px;
+  opacity:0.7;
+}
